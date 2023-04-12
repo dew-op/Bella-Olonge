@@ -52,6 +52,7 @@ p {
 
 a {
     text-decoration: none;
+    font-size: 1vw;
     color: #3e3e3e;
 }
 
@@ -83,7 +84,7 @@ nav {
 
 .nav-link {
     font-weight: 700;
-    font-size: 105%;
+    /* font-size: 105%; */
     transition: all 0.3s;
 }
 
@@ -343,6 +344,7 @@ Responsive Code
     }
     
     a {
+        font-size: 5vw;
         text-decoration: none;
         color: #3e3e3e;
     }
