@@ -1,0 +1,491 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 5% 7% 0;
+}
+
+
+/* headings */
+
+h1 {
+    font-size: 4.5vw;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 4vw;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+h4 {
+    color: #fa4f13;
+    font-size: 2.2vw;
+    font-weight: 800;
+}
+
+h5 {
+    font-size: 3vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    z-index: 4;
+    width: 100vw;
+}
+
+.navbar-brand{
+    padding: 3vh 7vw;
+}
+
+.brand-logo {
+    width: 13vw;
+}
+
+.navbar-options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 105%;
+    transition: all 0.3s;
+}
+
+.active-link {
+    color: #f7490c;
+}
+
+.nav-link:hover {
+    color: #f09e24;
+}
+
+
+.mobile-nav-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+
+/* title */
+
+#title {
+    color: #fff;
+    padding-top: 12.45vh;
+}
+
+.title-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop {
+    z-index: 0;
+    position: relative;
+    width: 100vw;
+}
+
+.frontier {
+    z-index: 1;
+    position: absolute;
+    width: 80%;
+}
+
+.title-overlay {
+    height: 77vmin;
+    display: flex;
+}
+
+.img1, .img2 {
+    position: absolute;
+}
+
+.img1 {
+    right: 49.5vw;
+    top: 80vmin;
+    z-index: 3;
+    width: 20vw;
+}
+
+.img2 {
+    left: 49vw;
+    top: 91vmin;
+    z-index: 2;
+    width: 18vw;
+}
+
+hr {
+    width: 55vw;
+    border: 2px solid #e5e5e5;
+}
+
+
+/* features */
+
+.feature {
+    display: inline-flex;
+}
+
+.feature-img {
+    width: 50%;
+}
+
+.feature-text {
+    width: 40%;
+    align-self: center;
+    text-align: left;
+}
+
+.feature-text > p {
+    color: #8f8f8f;
+}
+
+.f2 {
+    justify-content: right;
+}
+
+
+/* download */
+
+
+#download {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.playbtn {
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 150%;
+    background: #f7490c;
+    padding: 15px 35px 15px 35px;
+    text-decoration: none;
+    border: 2px solid #f7490c;
+    margin: 2%;
+    font-weight: 500;
+}
+
+.playbtn:hover {
+    background: #f09e24;
+    text-decoration: none;
+}
+
+.appbtn {
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 150%;
+    background: transparent;
+    padding: 15px 35px 15px 35px;
+    border: solid #fff 2px;
+    text-decoration: none;
+    margin: 2%;
+    font-weight: 500;
+}
+  
+.appbtn:hover {
+    background: #f7490c;
+    text-decoration: none;
+}
+
+
+
+/* footer */
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.footer-contacts {
+    display: flex;
+    gap: 2vw;
+}
+
+.footer-contacts > .footer-link > a > img {
+    aspect-ratio: 1;
+}
+
+.insta1, .insta2, .insta3 {
+    position: absolute;
+    display: grid;
+    z-index: 1;
+}
+
+.insta2 {
+    z-index: 2;
+    
+}
+
+.copywright-text {
+    font-size: 80%;
+    font-weight: 700;
+    color: #757373;
+}
+
+
+
+/* ================================================================
+Responsive Code
+================================================================ */
+
+
+
+/* 1450px */
+
+@media (max-width:1450px) {
+
+    .title-overlay {
+        height: 50vw;
+    }
+    
+    .img1 {
+        top: 55vw;
+    }
+    
+    .img2 {
+        top: 68vw;
+    }
+
+}
+
+
+
+/* 980px or Mobile View*/
+
+@media (max-width:980px) {
+
+    h1 {
+        font-size: 7vw;
+    }
+    
+    h2 {
+        font-size: 5.3vw;
+    }
+    
+    h3 {
+        font-size: 5.5vw;
+        font-weight: 700;
+    }
+    
+    h4 {
+        color: #fa4f13;
+        font-size: 4vw;
+        font-weight: 800;
+    }
+    
+    h5 {
+        font-size: 5vw;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #3e3e3e;
+    }
+
+    .mobile-nav-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+        z-index: 5;
+    }
+
+    nav {
+        /* position: ; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        padding: 3vw 7vw 3vw 7vw;
+    }
+    .navbar-brand > .brand-logo {
+        scale: 2;
+        transform: translateX(20px);
+    }
+
+    .nav-link {margin: 1.5vh;}
+
+    .navbar-options {
+        /* display: none; */
+        width: 100vw;
+        height: 100vh;
+        background-color: burlywood;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        /* to add transition */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .active > .navbar-options {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-nav-btn {
+        margin: 0 3vw 0 0;
+    }
+
+    .active > .mobile-nav-btn > .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active > .mobile-nav-btn > .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    #title {
+        color: black;
+        padding: 20vh 0 13vh 0;
+    }
+
+    .frontier > h5, .frontier > p {
+        color: #8f8f8f;
+    }
+
+
+
+    .backdrop {
+        opacity: 0;
+    }
+    
+    .appbtn {
+        color: #f7490c;
+        border: solid #f7490c 2px;
+    }
+
+    .appbtn:hover {
+        background: #f7490c;
+        text-decoration: none;
+    }
+
+    .feature {
+        display: inline-flex;
+    }
+    
+    .feature-img {
+        width: 100%;
+    }
+    
+    .feature-text {
+        width: 95%;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .f2 {
+        justify-content: right;
+    }
+    
+    #download {
+        height: auto;
+        
+        /* padding-bottom: 6vh; */
+    }
+
+    .footer-brand {
+        display: none;
+    }
+
+    .footer-contacts {
+        justify-content: center;
+    }
+
+    .copywright-text {
+        display: block;
+    }
+
+
+
+    .img1 {
+        top: 50vh;
+    }
+
+    .img2 {
+        top: 55vh;
+    }
+
+    #download {
+        padding: 10vh 0;
+        background-color: #282c44;
+    }
+}
