@@ -149,14 +149,14 @@ nav {
 
 .img1 {
     right: 49.5vw;
-    top: 80vmin;
+    top: 85vmin;
     z-index: 3;
     width: 20vw;
 }
 
 .img2 {
     left: 49vw;
-    top: 91vmin;
+    top: 93vmin;
     z-index: 2;
     width: 18vw;
 }
@@ -210,7 +210,7 @@ hr {
     border-radius: 15px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 150%;
+    font-size: 4vmin;
     background: #f7490c;
     padding: 15px 35px 15px 35px;
     text-decoration: none;
@@ -230,7 +230,7 @@ hr {
     border-radius: 15px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 150%;
+    font-size: 4vmin;
     background: transparent;
     padding: 15px 35px 15px 35px;
     border: solid #fff 2px;
